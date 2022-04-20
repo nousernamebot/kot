@@ -1,0 +1,27 @@
+[cookies]
+xf_session = "bbb03fc9cbf5cc223c42e38d5a9e25e9"
+xf_user = "4858536%2C4197f93d21735fb7220469aa409200b17f75bb70"
+
+[telegram]
+token = "5385626424:AAGDIpMz-4mq4Bmtm5vCYrK4zMPKsC_zPn8"
+id = "2046570972"
+
+[general]
+token = ""
+delay = [ 30, 60,]
+extra_delay = [ 90, 180,]
+proxy = ""
+set_likes = "all"
+hold_likes = 5
+timeout = 60
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0"
+
+[anticaptcha]
+host = "http://api.captcha.guru/"
+token = "625c35a3069a9a7ea75a9d6e6e15622b"
+
+[log]
+info = true
+success = true
+error = true
+debug = false

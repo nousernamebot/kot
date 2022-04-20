@@ -1,0 +1,15 @@
+loguru
+beautifulsoup4
+httpx[http2]
+js2py
+httpx[socks]
+pycryptodome
+aiofiles
+jsonschema
+ujson
+toml
+filelock
+lxml
+aiohttp
+yarl
+pyarmor

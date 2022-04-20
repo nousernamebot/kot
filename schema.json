@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "anticaptcha": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "host",
+        "token"
+      ]
+    },
+    "cookies": {
+      "type": "object",
+      "properties": {
+        "xf_session": {
+          "type": "string"
+        },
+        "xf_tfa_trust": {
+          "type": "string"
+        },
+        "xf_user": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "xf_session",
+        "xf_tfa_trust",
+        "xf_user"
+      ]
+    },
+    "general": {
+      "type": "object",
+      "properties": {
+        "delay": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "extra_delay": {
+          "type": "array",
+          "items": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "hold_likes": {
+          "type": "integer"
+        },
+        "proxy": {
+          "type": "string"
+        },
+        "set_likes": {
+          "type": "string"
+        },
+        "timeout": {
+          "type": "integer"
+        },
+        "token": {
+          "type": "string"
+        },
+        "user_agent": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "delay",
+        "extra_delay",
+        "hold_likes",
+        "proxy",
+        "set_likes",
+        "timeout",
+        "token",
+        "user_agent"
+      ]
+    },
+    "log": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean"
+        },
+        "error": {
+          "type": "boolean"
+        },
+        "info": {
+          "type": "boolean"
+        },
+        "success": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "debug",
+        "error",
+        "info",
+        "success"
+      ]
+    },
+    "telegram": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "token"
+      ]
+    }
+  },
+  "required": [
+    "anticaptcha",
+    "cookies",
+    "general",
+    "log",
+    "telegram"
+  ]
+}
